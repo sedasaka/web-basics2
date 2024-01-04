@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Other Page</title>
     <style>
-        body {
-            background-color: black;
-            font-family: monospace;
-            color: rgb(189, 189, 42);
-            font-size: 24px;
-            display: grid;
-            place-items: center;
-            
+      body {
+       height: 100vh;
+        background-color: black;
+        font-family: monospace;
+        color: rgb(189, 189, 42);
+        font-size: 24px;
+        display:grid;
+        place-items:center;
+      }
+      div {
+        text-align: center;
+      }
+      #backend {
+        scale: -1;}
+@keyframes rotation {
+    0% {rotate:0deg;}
+    50% {rotate:180deg;}
+    100% {rotate:360deg; }
+    
+}
+main {
+animation: rotation 10s infinite;
 
-        }
-
-
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div> Frontend </div>
+      <div>
+        <div>Frontend</div>
         <div>🧸</div>
-        <div> Backend </div>
+        <div id="backend">Backend</div>
+      </div>
     </main>
-</body>
+  </body>
 </html>
